@@ -1,0 +1,63 @@
+$border-color: #828486;
+$hover-bg: #f9fafb;
+$text-color: #6b7280;
+$text-hover: #4b5563;
+$active-bg: #000000ed;
+
+.nav {
+  padding-top: 2.5rem; 
+  padding-bottom: 2.5rem; 
+  padding-left: 18rem;
+  background-color: #F4F2EE;
+}
+
+.h1 {
+  font-family: "Pacifico", cursive !important;
+  font-size: 2.25rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #F29724, #ca4e10c4, #91000f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 2rem;
+}
+
+@mixin button-style {
+  display: inline-block;
+  padding: 0.5rem 1rem; 
+  border: 1px solid $border-color;
+  transition: all 0.3s ease-in-out;
+  border-radius: 9999px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  color: $text-color;
+  text-align: center;
+
+  &:hover {
+    background-color: $hover-bg;
+    color: $text-hover;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.347);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.ul {
+  display: flex;
+  gap: 1.25rem; 
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.catLink {
+  @include button-style;
+}
+
+.active {
+  background-color: $active-bg;
+  color: white !important;
+  font-weight: bold;
+  box-shadow: 0px 4px 15px rgba(45, 45, 45, 0.5);
+}

@@ -1,0 +1,46 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #F9FAFB;
+  padding: 20px;
+  
+
+}
+
+.li {
+  padding: 10px 16px;
+  font-size: 1.125rem; 
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 18px;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.primary {
+  @extend .li;
+  background-color: #F29724;
+  color: white;
+  font-weight: 800; 
+  box-shadow: 0px 4px 15px #F29724;
+
+  &:hover {
+    box-shadow: none;    
+  }
+}
+
+.secondary {
+  @extend .li; 
+  border: 1px solid #ccc; 
+  color: #333;
+
+  &:hover {
+    box-shadow: 0px 4px 15px #f2952468;
+  }
+}

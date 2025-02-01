@@ -1,0 +1,94 @@
+.mealDetail {
+  padding-top: 2.5rem;
+  padding-bottom: 20rem;
+  display: flex;
+  padding-left: 300px;
+
+  .mainContent {
+    width: 66.6667%;
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Pacifico', cursive;
+  }
+
+  .contentGrid {
+    display: grid;
+    gap: 1rem;
+    align-items: stretch;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .imageContainer {
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+
+      li {
+        background-color: #dc2626; // red-600
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+
+        &.source {
+          background-color: #10b981; // emerald-600
+        }
+
+        a {
+          display: flex;
+          gap: 0.5rem;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .instructions {
+    margin-top: 1rem;
+  }
+
+  .sidebar {
+    width: 33.3333%;
+    padding: 1rem;
+
+    .ingredients {
+      background-color: white;
+      border-radius: 1rem;
+      padding: 1rem;
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        border-bottom: 0.25rem solid;
+        padding-bottom: 0.5rem;
+      }
+
+      .ingredient {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        border-bottom: 0.125rem solid;
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
