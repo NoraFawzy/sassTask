@@ -1,7 +1,7 @@
+import style from "./mealDetail.module.scss";
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { MealsContext } from "../Context/MealsContext";
-import style from "./MealDetail.module.scss";
 
 export default function MealDetail() {
   const { idMeal } = useParams();
